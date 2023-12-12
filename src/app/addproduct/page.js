@@ -3,8 +3,6 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import "./style.css";
 import { useRouter } from 'next/navigation';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Userinfo from "../components/Userinfo";
 
 function page() {
 
@@ -59,7 +57,8 @@ function page() {
 
     }
   
-
+//send data mongodb
+    
     let result = await fetch("http://localhost:3000/api/product", {
       method: "POST",
       body: JSON.stringify({ customerName, age, placeFrom, placeTo, condition, seat, passenger })
@@ -76,7 +75,7 @@ function page() {
       <h1>Ticket Booking </h1>
    
 
-      <div className='form-container mt-5 '>
+      <div className='form-container'>
         <form >
         <p style={{fontWeight:600}}>Booking Information </p>
         <hr/>
@@ -104,14 +103,9 @@ function page() {
            <br/>
       
           <button className='btn' onClick={addProduct}>Book Now</button>
-        <br/>
+ 
         <br/>
          <hr/>
-
-         {/* <p style={{fontWeight:600}}>After submit your details than Proceed your payment </p>
-         <Link href={"https://rzp.io/l/vynRzJnzrn"}>
-         <button className='pay-btn'>Pay Now</button>
-         </Link> */}
 
         </form>
 
