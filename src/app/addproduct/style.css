@@ -1,0 +1,93 @@
+input {
+
+  margin: 10px 10px;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+
+}
+
+hr {
+  border: 2px solid black;
+  margin: 5px 0px;
+}
+
+.btn {
+
+  width: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+
+}
+
+.pay-btn {
+  width: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.form-container {
+
+   box-shadow: -10px 10px 10px 5px grey;
+  backdrop-filter: blur(20px);
+  padding: 50px 80px;
+  width: 70%;
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 25px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.home {
+  height: 100vh;
+
+  background-image: url("https://media.istockphoto.com/id/879364174/photo/white-bus-traveling-on-the-asphalt-road-in-a-rural-landscape-at-sunset.jpg?s=612x612&w=0&k=20&c=AVMWs0BDjp3lEOfhOvnp2PPwBsmPBoZUhCpEG51KjVg=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width:768px) {
+  .form-container {
+  
+    width: 80%;
+    margin-top: 20px;
+
+  }
+
+  input {
+    padding: 5px 10px;
+    width: 40%;
+      border-radius: 10px;
+      border: none;
+    
+
+  }
+ 
+  .btn {
+
+    width: 50%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .pay-btn {
+    width: 60%;
+    padding: 10px 7px;
+    margin-top: 15px;
+  }
+}
